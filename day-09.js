@@ -19,11 +19,9 @@ function splitAndMerge(string, separator) {
 // https://www.codewars.com/kata/57277a31e5e51450a4000010
 
 function firstToLast(str, c) {
-  let lastIn;
-  let frstIn;
   if (str.includes(c)) {
-    frstIn = str.indexOf(c);
-    lastIn = str.lastIndexOf(c);
+    let frstIn = str.indexOf(c);
+    let lastIn = str.lastIndexOf(c);
     return lastIn - frstIn;
   } else {
     return -1;
